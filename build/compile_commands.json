@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/Animation.cpp.o -c /home/viki/Space-Invaders/Source/Animation.cpp",
+  "file": "/home/viki/Space-Invaders/Source/Animation.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/DrawText.cpp.o -c /home/viki/Space-Invaders/Source/DrawText.cpp",
+  "file": "/home/viki/Space-Invaders/Source/DrawText.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/Enemy.cpp.o -c /home/viki/Space-Invaders/Source/Enemy.cpp",
+  "file": "/home/viki/Space-Invaders/Source/Enemy.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/EnemyManager.cpp.o -c /home/viki/Space-Invaders/Source/EnemyManager.cpp",
+  "file": "/home/viki/Space-Invaders/Source/EnemyManager.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/Main.cpp.o -c /home/viki/Space-Invaders/Source/Main.cpp",
+  "file": "/home/viki/Space-Invaders/Source/Main.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/MainMenu.cpp.o -c /home/viki/Space-Invaders/Source/MainMenu.cpp",
+  "file": "/home/viki/Space-Invaders/Source/MainMenu.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/Player.cpp.o -c /home/viki/Space-Invaders/Source/Player.cpp",
+  "file": "/home/viki/Space-Invaders/Source/Player.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/Ufo.cpp.o -c /home/viki/Space-Invaders/Source/Ufo.cpp",
+  "file": "/home/viki/Space-Invaders/Source/Ufo.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/FileAccess.cpp.o -c /home/viki/Space-Invaders/Source/FileAccess.cpp",
+  "file": "/home/viki/Space-Invaders/Source/FileAccess.cpp"
+}
+]
