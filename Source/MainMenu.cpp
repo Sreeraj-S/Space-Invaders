@@ -8,15 +8,10 @@
 
 MainMenu::MainMenu()
 {
-    sf::Sprite logo_sprite;
-
-    sf::Texture logo_texture;
+    
 	logo_texture.loadFromFile("Resources/Images/Logo.png");
 
     logo_sprite.setTexture(logo_texture);
-
-    logo_sprite.setColor(sf::Color(255, 255, 255));
-    logo_sprite.setPosition((SCREEN_WIDTH / 2) - logo_texture.getSize().x - 0.25f * BASE_SIZE, 0.25f * BASE_SIZE);
     //logo_sprite.setTextureRect(sf::IntRect(0, 0, logo_texture.getSize().x, BASE_SIZE));
 
     
@@ -24,6 +19,9 @@ MainMenu::MainMenu()
 
 void MainMenu::draw(sf::RenderWindow& i_window)
 {
+    logo_sprite.setPosition((SCREEN_WIDTH / 2) - (logo_texture.getSize().x/2) , (SCREEN_HEIGHT / 4)- (logo_texture.getSize().y/2) );
+    logo_sprite.setTextureRect(sf::IntRect(0, 0, logo_texture.getSize().x, logo_texture.getSize().y));
+
     i_window.draw(logo_sprite);
 }
 

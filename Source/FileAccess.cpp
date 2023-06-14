@@ -31,10 +31,9 @@ unsigned short FileAccess::read(std::string filename){
         std::string line;
         
         while (std::getline(file, line)) {
-            std::cout << line << std::endl;
+            level = stoi(line);
         }
         file.close();
-        level = stoi(line);
         return level;
     }
     else {

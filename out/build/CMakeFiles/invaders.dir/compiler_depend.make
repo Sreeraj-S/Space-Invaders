@@ -1798,6 +1798,19 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: ../../Source/Main.cpp \
   /usr/include/c++/11/bit \
   /usr/include/c++/11/pstl/glue_numeric_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
+  /usr/include/c++/11/thread \
+  /usr/include/c++/11/bits/std_thread.h \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/this_thread_sleep.h \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
   /usr/include/SFML/System.hpp \
@@ -1808,11 +1821,6 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: ../../Source/Main.cpp \
   /usr/include/SFML/System/Err.hpp \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
-  /usr/include/c++/11/exception \
-  /usr/include/c++/11/bits/exception_ptr.h \
-  /usr/include/c++/11/bits/cxxabi_init_exception.h \
-  /usr/include/c++/11/typeinfo \
-  /usr/include/c++/11/bits/nested_exception.h \
   /usr/include/c++/11/bits/ios_base.h \
   /usr/include/c++/11/bits/locale_classes.h \
   /usr/include/c++/11/bits/locale_classes.tcc \
@@ -1848,10 +1856,6 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: ../../Source/Main.cpp \
   /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/functional \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
-  /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
   /usr/include/c++/11/ext/aligned_buffer.h \
@@ -1869,7 +1873,6 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: ../../Source/Main.cpp \
   /usr/include/c++/11/bits/codecvt.h \
   /usr/include/c++/11/bits/locale_facets_nonio.tcc \
   /usr/include/c++/11/bits/locale_conv.h \
-  /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/SFML/System/Utf.inl \
   /usr/include/c++/11/iterator \
   /usr/include/c++/11/bits/stream_iterator.h \
@@ -3014,6 +3017,8 @@ CMakeFiles/invaders.dir/Source/Ufo.cpp.o: ../../Source/Ufo.cpp \
 
 /usr/include/c++/11/limits:
 
+/usr/include/c++/11/thread:
+
 /usr/include/c++/11/ratio:
 
 ../../Source/Ufo.cpp:
@@ -3199,6 +3204,8 @@ CMakeFiles/invaders.dir/Source/Ufo.cpp.o: ../../Source/Ufo.cpp \
 /usr/include/c++/11/new:
 
 /usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/c++/11/bits/std_thread.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
 
@@ -3559,6 +3566,8 @@ CMakeFiles/invaders.dir/Source/Ufo.cpp.o: ../../Source/Ufo.cpp \
 /usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
+
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 

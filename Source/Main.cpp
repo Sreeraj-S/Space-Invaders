@@ -1,6 +1,7 @@
 #include <array>
 #include <chrono>
 #include <random>
+#include <thread>
 #include <SFML/Graphics.hpp>
 
 #include "Headers/Animation.hpp"
@@ -42,12 +43,19 @@ int main()
 
 	sf::Sprite background_sprite;
 	sf::Sprite powerup_bar_sprite;
+	sf::Sprite logo_sprite;
+
+    sf::Texture logo_texture;
+	logo_texture.loadFromFile("Resources/Images/Logo.png");
+
 
 	sf::Texture background_texture;
 	background_texture.loadFromFile("Resources/Images/Background.png");
 
 	sf::Texture font_texture;
 	font_texture.loadFromFile("Resources/Images/Font.png");
+
+
 
 	sf::Texture powerup_bar_texture;
 	powerup_bar_texture.loadFromFile("Resources/Images/PowerupBar.png");
@@ -64,6 +72,7 @@ int main()
 
 	background_sprite.setTexture(background_texture);
 	powerup_bar_sprite.setTexture(powerup_bar_texture);
+	logo_sprite.setTexture(logo_texture);
 
 	previous_time = std::chrono::steady_clock::now();
 
@@ -90,13 +99,7 @@ int main()
 					}
 				}
 			}
-			while(game_start){
-				mainmenu.draw(window);
-				if (1 == sf::Keyboard::isKeyPressed(sf::Keyboard::P)){
-					game_start = 1;
-				}
-				window.display();
-			}
+
 			//We're gonna show the "Game over!" text after the player's death animation.
 			if (1 == player.get_dead_animation_over())
 			{
@@ -108,7 +111,7 @@ int main()
 				player.die();
 			}
 
-			if (0 == game_over)
+			if (0 == game_over && game_start == 1)
 			{
 				if (0 == enemy_manager.get_enemies().size())
 				{
@@ -132,6 +135,7 @@ int main()
 						next_level_timer--;
 					}
 				}
+				
 				else
 				{
 					player.update(random_engine, enemy_manager.get_enemy_bullets(), enemy_manager.get_enemies(), ufo);
@@ -139,6 +143,13 @@ int main()
 					enemy_manager.update(random_engine);
 
 					ufo.update(random_engine);
+				}
+			}
+			else if (game_start == 0)
+			{
+				mainmenu.draw(window);
+				if (1 == sf::Keyboard::isKeyPressed(sf::Keyboard::P)){
+					game_start = 1;
 				}
 			}
 			else if (1 == sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
@@ -161,7 +172,7 @@ int main()
 				window.draw(background_sprite);
 
 				//When the player dies, we won't show anything but the player.
-				if (0 == player.get_dead())
+				if (0 == player.get_dead() && game_start == 1)
 				{
 					enemy_manager.draw(window);
 
@@ -209,6 +220,11 @@ int main()
 						window.draw(powerup_bar_sprite);
 					}
 				}
+				else if(0==game_start)
+				{
+					mainmenu.draw(window);
+
+				}
 
 				player.draw(window);
 
@@ -230,6 +246,12 @@ int main()
 				else if (1 == next_level)
 				{
 					draw_text(0.5f * (SCREEN_WIDTH - 5.5f * BASE_SIZE), 0.5f * (SCREEN_HEIGHT - BASE_SIZE), "Next level!", window, font_texture);
+				}
+
+
+				else if(0 == game_start)
+				{
+					draw_text(0.5f * ((SCREEN_WIDTH/2) - 3.0f * BASE_SIZE), 0.5f * (SCREEN_HEIGHT - BASE_SIZE), "Press P to start the game!", window, font_texture);
 				}
 
 				window.display();
