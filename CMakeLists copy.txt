@@ -4,16 +4,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES 
-    Source/Animation.cpp
-    Source/DrawText.cpp
-    Source/Enemy.cpp
-    Source/EnemyManager.cpp
-    Source/Main.cpp
-    Source/MainMenu.cpp
-    Source/Player.cpp
-    Source/Ufo.cpp
-    Source/FileAccess.cpp
-    #Source/test.cpp    
+    # Source/Animation.cpp
+    # Source/DrawText.cpp
+    # Source/Enemy.cpp
+    # Source/EnemyManager.cpp
+    # Source/Main.cpp
+    # Source/MainMenu.cpp
+    # Source/Player.cpp
+    # Source/Ufo.cpp
+    #Source/FileAccess.cpp
+    Source/test.cpp
+    
 )
 
 set (HEADERS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/Headers/)

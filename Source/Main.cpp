@@ -19,6 +19,8 @@ int main()
 	bool game_over = 0;
 	bool next_level = 0;
 
+
+
 	std::string HIGHSCORE_FILENAME = "highScore.txt";
 	unsigned short high_score;
 	bool game_start = 0;
@@ -36,6 +38,17 @@ int main()
 	std::mt19937_64 random_engine(std::chrono::system_clock::now().time_since_epoch().count());
 
 	sf::Event event;
+
+	sf::Font font;
+    if (!font.loadFromFile("arial.ttf")) {
+        return 1;
+    }
+
+	sf::Text inputText;
+	inputText.setFont(font);
+    inputText.setCharacterSize(12);
+    inputText.setFillColor(sf::Color::White);
+    inputText.setPosition(10, 10);
 
 	sf::RenderWindow window(sf::VideoMode(SCREEN_RESIZE * SCREEN_WIDTH, SCREEN_RESIZE * SCREEN_HEIGHT), "Space Invaders", sf::Style::Close);
 	//Resizing the screen.
@@ -76,6 +89,8 @@ int main()
 
 	previous_time = std::chrono::steady_clock::now();
 
+	std::string userInput;
+
 	while (1 == window.isOpen() )
 	{
 		//Making the game frame rate independent.
@@ -89,7 +104,7 @@ int main()
 		{
 			lag -= FRAME_DURATION;
 
-			while (1 == window.pollEvent(event))
+			while (window.pollEvent(event))
 			{
 				switch (event.type)
 				{
@@ -97,7 +112,20 @@ int main()
 					{
 						window.close();
 					}
+					case sf::Event::TextEntered: 
+					{
+					if (event.text.unicode < 128) {
+						if (event.text.unicode == '\b' && !userInput.empty()) {
+							userInput.pop_back(); // Handle backspace key
+						}
+						else if (event.text.unicode != '\r') {
+							userInput += static_cast<char>(event.text.unicode);
+						}
+						inputText.setString(userInput);
+					}
+                	}
 				}
+
 			}
 
 			//We're gonna show the "Game over!" text after the player's death animation.
@@ -232,6 +260,7 @@ int main()
 
 				if (1 == game_over)
 				{
+					window.draw(inputText);
 					//I was too lazy to add center alignment, so I just wrote numbers instead.
 					draw_text(0.5f * (SCREEN_WIDTH - 5 * BASE_SIZE), 0.5f * SCREEN_HEIGHT-25.0f, "Game over!", window, font_texture);
 					high_score = fileaccess.read(HIGHSCORE_FILENAME);
