@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/viki/Space-Invaders/Source/Animation.cpp" "CMakeFiles/invaders.dir/Source/Animation.cpp.o" "gcc" "CMakeFiles/invaders.dir/Source/Animation.cpp.o.d"
+  "/home/viki/Space-Invaders/Source/CheckName.cpp" "CMakeFiles/invaders.dir/Source/CheckName.cpp.o" "gcc" "CMakeFiles/invaders.dir/Source/CheckName.cpp.o.d"
   "/home/viki/Space-Invaders/Source/DrawText.cpp" "CMakeFiles/invaders.dir/Source/DrawText.cpp.o" "gcc" "CMakeFiles/invaders.dir/Source/DrawText.cpp.o.d"
   "/home/viki/Space-Invaders/Source/Enemy.cpp" "CMakeFiles/invaders.dir/Source/Enemy.cpp.o" "gcc" "CMakeFiles/invaders.dir/Source/Enemy.cpp.o.d"
   "/home/viki/Space-Invaders/Source/EnemyManager.cpp" "CMakeFiles/invaders.dir/Source/EnemyManager.cpp.o" "gcc" "CMakeFiles/invaders.dir/Source/EnemyManager.cpp.o.d"

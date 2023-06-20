@@ -50,6 +50,7 @@ constexpr unsigned short UFO_TIMER_MIN = 768;
 
 constexpr std::chrono::microseconds FRAME_DURATION(16667);
 
+
 //I should've put this in a separate file. I didn't realize it was gonna get this big.
 struct Bullet
 {

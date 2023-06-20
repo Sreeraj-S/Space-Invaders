@@ -43,5 +43,10 @@
   "directory": "/home/viki/Space-Invaders/build",
   "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/FileAccess.cpp.o -c /home/viki/Space-Invaders/Source/FileAccess.cpp",
   "file": "/home/viki/Space-Invaders/Source/FileAccess.cpp"
+},
+{
+  "directory": "/home/viki/Space-Invaders/build",
+  "command": "/usr/bin/c++  -I/home/viki/Space-Invaders/Headers -g -std=gnu++17 -o CMakeFiles/invaders.dir/Source/CheckName.cpp.o -c /home/viki/Space-Invaders/Source/CheckName.cpp",
+  "file": "/home/viki/Space-Invaders/Source/CheckName.cpp"
 }
 ]

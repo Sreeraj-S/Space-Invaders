@@ -13,6 +13,7 @@ set(SOURCES
     Source/Player.cpp
     Source/Ufo.cpp
     Source/FileAccess.cpp
+    Source/CheckName.cpp
     #Source/test.cpp    
 )
 

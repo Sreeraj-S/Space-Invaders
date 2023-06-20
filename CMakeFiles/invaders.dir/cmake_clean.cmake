@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/invaders.dir/Source/Animation.cpp.o"
   "CMakeFiles/invaders.dir/Source/Animation.cpp.o.d"
+  "CMakeFiles/invaders.dir/Source/CheckName.cpp.o"
+  "CMakeFiles/invaders.dir/Source/CheckName.cpp.o.d"
   "CMakeFiles/invaders.dir/Source/DrawText.cpp.o"
   "CMakeFiles/invaders.dir/Source/DrawText.cpp.o.d"
   "CMakeFiles/invaders.dir/Source/Enemy.cpp.o"

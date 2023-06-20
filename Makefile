@@ -153,6 +153,30 @@ Source/Animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/invaders.dir/build.make CMakeFiles/invaders.dir/Source/Animation.cpp.s
 .PHONY : Source/Animation.cpp.s
 
+Source/CheckName.o: Source/CheckName.cpp.o
+.PHONY : Source/CheckName.o
+
+# target to build an object file
+Source/CheckName.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/invaders.dir/build.make CMakeFiles/invaders.dir/Source/CheckName.cpp.o
+.PHONY : Source/CheckName.cpp.o
+
+Source/CheckName.i: Source/CheckName.cpp.i
+.PHONY : Source/CheckName.i
+
+# target to preprocess a source file
+Source/CheckName.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/invaders.dir/build.make CMakeFiles/invaders.dir/Source/CheckName.cpp.i
+.PHONY : Source/CheckName.cpp.i
+
+Source/CheckName.s: Source/CheckName.cpp.s
+.PHONY : Source/CheckName.s
+
+# target to generate assembly for a file
+Source/CheckName.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/invaders.dir/build.make CMakeFiles/invaders.dir/Source/CheckName.cpp.s
+.PHONY : Source/CheckName.cpp.s
+
 Source/DrawText.o: Source/DrawText.cpp.o
 .PHONY : Source/DrawText.o
 
@@ -357,6 +381,9 @@ help:
 	@echo "... Source/Animation.o"
 	@echo "... Source/Animation.i"
 	@echo "... Source/Animation.s"
+	@echo "... Source/CheckName.o"
+	@echo "... Source/CheckName.i"
+	@echo "... Source/CheckName.s"
 	@echo "... Source/DrawText.o"
 	@echo "... Source/DrawText.i"
 	@echo "... Source/DrawText.s"

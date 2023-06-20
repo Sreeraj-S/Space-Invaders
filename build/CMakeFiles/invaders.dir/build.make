@@ -195,6 +195,20 @@ CMakeFiles/invaders.dir/Source/FileAccess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/invaders.dir/Source/FileAccess.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viki/Space-Invaders/Source/FileAccess.cpp -o CMakeFiles/invaders.dir/Source/FileAccess.cpp.s
 
+CMakeFiles/invaders.dir/Source/CheckName.cpp.o: CMakeFiles/invaders.dir/flags.make
+CMakeFiles/invaders.dir/Source/CheckName.cpp.o: ../Source/CheckName.cpp
+CMakeFiles/invaders.dir/Source/CheckName.cpp.o: CMakeFiles/invaders.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/viki/Space-Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/invaders.dir/Source/CheckName.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/invaders.dir/Source/CheckName.cpp.o -MF CMakeFiles/invaders.dir/Source/CheckName.cpp.o.d -o CMakeFiles/invaders.dir/Source/CheckName.cpp.o -c /home/viki/Space-Invaders/Source/CheckName.cpp
+
+CMakeFiles/invaders.dir/Source/CheckName.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/invaders.dir/Source/CheckName.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/viki/Space-Invaders/Source/CheckName.cpp > CMakeFiles/invaders.dir/Source/CheckName.cpp.i
+
+CMakeFiles/invaders.dir/Source/CheckName.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/invaders.dir/Source/CheckName.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/viki/Space-Invaders/Source/CheckName.cpp -o CMakeFiles/invaders.dir/Source/CheckName.cpp.s
+
 # Object files for target invaders
 invaders_OBJECTS = \
 "CMakeFiles/invaders.dir/Source/Animation.cpp.o" \
@@ -205,7 +219,8 @@ invaders_OBJECTS = \
 "CMakeFiles/invaders.dir/Source/MainMenu.cpp.o" \
 "CMakeFiles/invaders.dir/Source/Player.cpp.o" \
 "CMakeFiles/invaders.dir/Source/Ufo.cpp.o" \
-"CMakeFiles/invaders.dir/Source/FileAccess.cpp.o"
+"CMakeFiles/invaders.dir/Source/FileAccess.cpp.o" \
+"CMakeFiles/invaders.dir/Source/CheckName.cpp.o"
 
 # External object files for target invaders
 invaders_EXTERNAL_OBJECTS =
@@ -219,13 +234,14 @@ invaders: CMakeFiles/invaders.dir/Source/MainMenu.cpp.o
 invaders: CMakeFiles/invaders.dir/Source/Player.cpp.o
 invaders: CMakeFiles/invaders.dir/Source/Ufo.cpp.o
 invaders: CMakeFiles/invaders.dir/Source/FileAccess.cpp.o
+invaders: CMakeFiles/invaders.dir/Source/CheckName.cpp.o
 invaders: CMakeFiles/invaders.dir/build.make
 invaders: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 invaders: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 invaders: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 invaders: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 invaders: CMakeFiles/invaders.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viki/Space-Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable invaders"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/viki/Space-Invaders/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable invaders"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/invaders.dir/link.txt --verbose=$(VERBOSE)
 	/usr/bin/cmake -E copy_directory /home/viki/Space-Invaders/Source/Resources /home/viki/Space-Invaders/build/Resources
 

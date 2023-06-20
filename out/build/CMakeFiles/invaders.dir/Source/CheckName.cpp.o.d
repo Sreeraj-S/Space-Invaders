@@ -1,6 +1,7 @@
-CMakeFiles/invaders.dir/Source/Main.cpp.o: \
- /home/viki/Space-Invaders/Source/Main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/11/array /usr/include/c++/11/utility \
+CMakeFiles/invaders.dir/Source/CheckName.cpp.o: \
+ /home/viki/Space-Invaders/Source/CheckName.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/array \
+ /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -161,16 +162,21 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: \
  /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
  /usr/include/c++/11/bits/stl_numeric.h /usr/include/c++/11/bit \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/regex \
+ /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/tuple /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/regex \
  /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/tuple \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/typeinfo \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/hashtable.h \
@@ -186,13 +192,10 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: \
  /usr/include/c++/11/bits/locale_classes.tcc \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
- /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
- /usr/include/c++/11/bits/exception_ptr.h \
- /usr/include/c++/11/bits/cxxabi_init_exception.h \
- /usr/include/c++/11/bits/nested_exception.h \
- /usr/include/c++/11/bits/streambuf.tcc /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
- /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/locale /usr/include/c++/11/bits/locale_facets.h \
+ /usr/include/c++/11/cwctype /usr/include/wctype.h \
+ /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
  /usr/include/c++/11/bits/locale_facets.tcc \
@@ -201,8 +204,7 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
  /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
  /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/locale_conv.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bits/shared_ptr.h \
  /usr/include/c++/11/bits/shared_ptr_base.h \
@@ -235,9 +237,7 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: \
  /usr/include/c++/11/bits/regex_compiler.tcc \
  /usr/include/c++/11/bits/regex.h /usr/include/c++/11/bits/regex.tcc \
  /usr/include/c++/11/bits/regex_executor.h \
- /usr/include/c++/11/bits/regex_executor.tcc /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h \
+ /usr/include/c++/11/bits/regex_executor.tcc \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -298,12 +298,5 @@ CMakeFiles/invaders.dir/Source/Main.cpp.o: \
  /usr/include/SFML/Graphics/Text.hpp \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/viki/Space-Invaders/Source/Headers/Animation.hpp \
- /home/viki/Space-Invaders/Source/Headers/DrawText.hpp \
  /home/viki/Space-Invaders/Source/Headers/Global.hpp \
- /home/viki/Space-Invaders/Source/Headers/MainMenu.hpp \
- /home/viki/Space-Invaders/Source/Headers/Enemy.hpp \
- /home/viki/Space-Invaders/Source/Headers/EnemyManager.hpp \
- /home/viki/Space-Invaders/Source/Headers/Ufo.hpp \
- /home/viki/Space-Invaders/Source/Headers/Player.hpp \
- /home/viki/Space-Invaders/Source/Headers/FileAccess.hpp \
  /home/viki/Space-Invaders/Source/Headers/CheckName.hpp
