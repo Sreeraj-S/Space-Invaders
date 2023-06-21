@@ -1,6 +1,7 @@
 #include <array>
 #include <chrono>
 #include <random>
+#include<thread>
 #include <SFML/Graphics.hpp>
 
 #include "Headers/Animation.hpp"
@@ -219,7 +220,11 @@ void EnemyManager::update(std::mt19937_64& i_random_engine)
 
 		for (Enemy& enemy : enemies)
 		{
+			std::thread enemyMove([&enemy](){
 			enemy.move();
+
+			});
+			enemyMove.join();
 		}
 
 		for (Animation& enemy_animation : enemy_animations)
@@ -235,10 +240,16 @@ void EnemyManager::update(std::mt19937_64& i_random_engine)
 
 	for (Enemy& enemy : enemies)
 	{
-		enemy.update();
+		std::thread enemyUpdate([&enemy](){
+			enemy.update();
+
+			});
+			enemyUpdate.join();
+
 
 		if (0 == shoot_distribution(i_random_engine))
 		{
+
 			enemy.shoot(enemy_bullets);
 		}
 	}
@@ -260,7 +271,12 @@ void EnemyManager::update(std::mt19937_64& i_random_engine)
 
 	for (Bullet& enemy_bullet : enemy_bullets)
 	{
+		std::thread enemyBulletUpdate([&enemy_bullet](){
 		enemy_bullet.update();
+			
+
+			});
+			enemyBulletUpdate.join();
 	}
 
 	//I used a lambda!

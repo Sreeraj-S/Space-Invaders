@@ -13,7 +13,7 @@
 
 CheckName::CheckName()
 {
-    isSpecialCharacter = true;
+    isSpecialCharacter = false;
 }
 
 void CheckName::setName(std::string value){

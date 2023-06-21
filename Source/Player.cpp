@@ -1,6 +1,7 @@
 #include <array>
 #include <chrono>
 #include <random>
+#include<thread>
 #include <SFML/Graphics.hpp>
 
 #include "Headers/Animation.hpp"
@@ -210,7 +211,10 @@ void Player::update(std::mt19937_64& i_random_engine, std::vector<Bullet>& i_ene
 
 	for (Bullet& bullet : bullets)
 	{
-		bullet.update();
+		std::thread bulletUpdate([&bullet](){
+			bullet.update();
+		});
+		bulletUpdate.join();
 		
 		if (0 == bullet.dead)
 		{

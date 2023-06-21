@@ -180,16 +180,27 @@ int main()
 				{
 					player.update(random_engine, enemy_manager.get_enemy_bullets(), enemy_manager.get_enemies(), ufo);
 
-					enemy_manager.update(random_engine);
+					std::thread enemyUpdate([&enemy_manager, &random_engine]() {
+        enemy_manager.update(random_engine);
+    });				
+					std::thread ufoUpdate([&ufo, &random_engine]() {
+        ufo.update(random_engine);
+    });
+					enemyUpdate.join();
+					ufoUpdate.join();
 
-					ufo.update(random_engine);
+					
 				}
 			}
 			else if (game_start == 0)
 			{
-				mainmenu.draw(window);
+				std::thread mainMenuThread([&mainmenu, &window]() {
+        mainmenu.draw(window);
+    });
+	mainMenuThread.join();
 				if (1 == sf::Keyboard::isKeyPressed(sf::Keyboard::P))
 				{
+					
 					game_start = 1;
 				}
 			}
