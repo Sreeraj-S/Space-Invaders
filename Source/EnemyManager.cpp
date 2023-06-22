@@ -94,6 +94,7 @@ void EnemyManager::draw(sf::RenderWindow& i_window)
 
 void EnemyManager::reset(unsigned short i_level)
 {
+	std::vector<int> enemySpawn{ 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5};
 	//RESET EVERYTHING!!!!
 	unsigned char enemy_x = 0;
 	unsigned char enemy_y = 0;

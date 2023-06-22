@@ -1,3 +1,0 @@
-/home/viki/Space-Invaders/CMakeFiles/invaders.dir
-/home/viki/Space-Invaders/CMakeFiles/edit_cache.dir
-/home/viki/Space-Invaders/CMakeFiles/rebuild_cache.dir

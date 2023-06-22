@@ -2,6 +2,7 @@
 
 class Player
 {
+	
 	//Is it okay to call this variable "dead"?
 	//I mean, it's a spaceship.
 	//And spaceships don't die, they get destroyed.

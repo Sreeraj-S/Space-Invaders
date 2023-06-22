@@ -1,6 +1,7 @@
-CMakeFiles/invaders.dir/Source/Player.cpp.o: \
- /home/viki/Space-Invaders/Source/Player.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/11/array /usr/include/c++/11/utility \
+CMakeFiles/invaders.dir/Source/EnemyManager.cpp.o: \
+ /home/viki/Space-Invaders/Source/EnemyManager.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/array \
+ /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -169,8 +170,7 @@ CMakeFiles/invaders.dir/Source/Player.cpp.o: \
  /usr/include/c++/11/tuple /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/unique_ptr.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/semaphore.h \
- /usr/include/x86_64-linux-gnu/bits/semaphore.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h \
  /usr/include/SFML/Graphics.hpp /usr/include/SFML/Window.hpp \
  /usr/include/SFML/System.hpp /usr/include/SFML/Config.hpp \
  /usr/include/SFML/System/Clock.hpp /usr/include/SFML/System/Export.hpp \
@@ -273,5 +273,4 @@ CMakeFiles/invaders.dir/Source/Player.cpp.o: \
  /home/viki/Space-Invaders/Source/Headers/Animation.hpp \
  /home/viki/Space-Invaders/Source/Headers/Global.hpp \
  /home/viki/Space-Invaders/Source/Headers/Enemy.hpp \
- /home/viki/Space-Invaders/Source/Headers/Ufo.hpp \
- /home/viki/Space-Invaders/Source/Headers/Player.hpp
+ /home/viki/Space-Invaders/Source/Headers/EnemyManager.hpp

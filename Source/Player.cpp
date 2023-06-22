@@ -2,6 +2,7 @@
 #include <chrono>
 #include <random>
 #include<thread>
+#include<semaphore.h>
 #include <SFML/Graphics.hpp>
 
 #include "Headers/Animation.hpp"
@@ -10,9 +11,12 @@
 #include "Headers/Ufo.hpp"
 #include "Headers/Player.hpp"
 
+sem_t semaphore;
+
 Player::Player() :
 	explosion(EXPLOSION_ANIMATION_SPEED, BASE_SIZE, "Resources/Images/Explosion.png")
 {
+	sem_init(&semaphore, 0, 1);
 	reset();
 
 	bullet_texture.loadFromFile("Resources/Images/PlayerBullet.png");
@@ -55,6 +59,7 @@ void Player::die()
 
 void Player::draw(sf::RenderWindow& i_window)
 {
+	sem_wait(&semaphore);
 	if (0 == dead)
 	{
 		sprite.setPosition(x, y);
@@ -79,10 +84,12 @@ void Player::draw(sf::RenderWindow& i_window)
 	{
 		explosion.draw(x, y, i_window, sf::Color(255, 36, 0));
 	}
+	sem_post(&semaphore);
 }
 
 void Player::reset()
 {
+	sem_wait(&semaphore);
 	dead = 0;
 	dead_animation_over = 0;
 	shield_animation_over = 1;
@@ -97,10 +104,12 @@ void Player::reset()
 	bullets.clear();
 
 	explosion.reset();
+	sem_post(&semaphore);
 }
 
 void Player::update(std::mt19937_64& i_random_engine, std::vector<Bullet>& i_enemy_bullets, std::vector<Enemy>& i_enemies, Ufo& i_ufo)
 {
+	sem_wait(&semaphore);
 	if (0 == dead)
 	{
 		unsigned char powerup_type;
@@ -244,6 +253,7 @@ void Player::update(std::mt19937_64& i_random_engine, std::vector<Bullet>& i_ene
 	{
 		return 1 == i_bullet.dead;
 	}), bullets.end());
+	sem_post(&semaphore);
 }
 
 sf::IntRect Player::get_hitbox() const
