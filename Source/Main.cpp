@@ -304,6 +304,10 @@ int main()
 				}
 				else if (1 == next_level)
 				{
+					if(level == high_score+1){
+					draw_text(0.5f * (SCREEN_WIDTH - 5.5f * BASE_SIZE), 0.5f * (SCREEN_HEIGHT - BASE_SIZE)-25, "New HighScore!", window, font_texture);
+
+					}
 					draw_text(0.5f * (SCREEN_WIDTH - 5.5f * BASE_SIZE), 0.5f * (SCREEN_HEIGHT - BASE_SIZE), "Next level!", window, font_texture);
 				}
 
