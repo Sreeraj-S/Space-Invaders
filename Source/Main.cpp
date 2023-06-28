@@ -214,6 +214,9 @@ int main()
 
 				enemy_manager.reset(level);
 
+				userInput = "";
+				inputText.setString(userInput);
+
 				ufo.reset(1, random_engine);
 			}
 

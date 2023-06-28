@@ -2913,6 +2913,8 @@ CMakeFiles/invaders.dir/Source/Player.cpp.o: ../../Source/Player.cpp \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/unique_ptr.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
   /usr/include/SFML/Graphics.hpp \
   /usr/include/SFML/Window.hpp \
   /usr/include/SFML/System.hpp \
@@ -3952,6 +3954,8 @@ CMakeFiles/invaders.dir/Source/Ufo.cpp.o: ../../Source/Ufo.cpp \
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
+
 /usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/c++/11/bits/stl_construct.h:
@@ -4059,6 +4063,8 @@ CMakeFiles/invaders.dir/Source/Ufo.cpp.o: ../../Source/Ufo.cpp \
 /usr/include/c++/11/bits/exception.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
+
+/usr/include/semaphore.h:
 
 /usr/include/c++/11/cwctype:
 
