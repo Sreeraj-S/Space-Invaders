@@ -75,7 +75,8 @@ int main()
 
 	EnemyManager enemy_manager;
 
-	FileAccess fileaccess;
+	FileAccess fileaccess(HIGHSCORE_FILENAME);
+	fileaccess.directoryPath("HighScores");
 
 	CheckName CheckName;
 
@@ -213,7 +214,9 @@ int main()
 				player.reset();
 
 				enemy_manager.reset(level);
-
+				if(userInput != ""){
+					fileaccess.nameHighScoreWrite(userInput,level);
+				}
 				userInput = "";
 				inputText.setString(userInput);
 
@@ -290,16 +293,16 @@ int main()
 					window.draw(inputText);
 					// I was too lazy to add center alignment, so I just wrote numbers instead.
 					draw_text(0.5f * (SCREEN_WIDTH - 5 * BASE_SIZE), 0.5f * SCREEN_HEIGHT - 45.0f, "Game over!", window, font_texture);
-					high_score = fileaccess.read(HIGHSCORE_FILENAME);
+					high_score = fileaccess.read();
 					if (high_score < level)
 					{
-						fileaccess.write(HIGHSCORE_FILENAME, level);
+						fileaccess.write( level);
 					}
 					if(CheckName.isSpecialChar()){
 					draw_text(0.1f * SCREEN_WIDTH - 20  , 0.9f * SCREEN_HEIGHT, "Cannot add special character in name!!!", window, font_texture);
 
 					}
-					high_score = fileaccess.read(HIGHSCORE_FILENAME);
+					high_score = fileaccess.read();
 					draw_text(0.5f * (SCREEN_WIDTH - 5 * BASE_SIZE), 0.5f * SCREEN_HEIGHT - 15.0f, "Name:", window, font_texture);
 					
 					draw_text(0.5f * (SCREEN_WIDTH - 5 * BASE_SIZE), 0.5f * SCREEN_HEIGHT + 25.0f, "High Score:" + std::to_string(high_score), window, font_texture);

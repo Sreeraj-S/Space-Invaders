@@ -3,8 +3,15 @@
 #include <string>
 
 class FileAccess{
+    std::string filePath;
+    std::string directoryPathName;
     public:
-        FileAccess();
-        void write(std::string filename,int level);
-        unsigned short read(std::string filename);
+        FileAccess(std::string value);
+        void write(int level);
+        unsigned short read();
+        void rename(std::string newpath);
+        void directoryPath(std::string directPath);
+        void nameHighScoreWrite(std::string name,int level);
+
+
 };
