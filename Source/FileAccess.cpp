@@ -22,7 +22,6 @@ void FileAccess::write( int level) {
     std::ofstream outputFile(filePath);
     if (outputFile.is_open()) {
         outputFile << level;
-        std::cout << "Value " << level << " written to file: " << filePath << std::endl;
     } else {
         std::cerr << "Failed to open file for writing: " << filePath << std::endl;
     }
@@ -59,17 +58,14 @@ void FileAccess::nameHighScoreWrite(std::string name,int level){
     std::string namePath = directoryPathName+"/"+name+".txt";
     std::ofstream outputFile(namePath);
     std::ifstream inputFile(namePath);
-    if (!inputFile.is_open()) {
-        outputFile << level;
-    }
-    else{
-        int highScore = 0;
-        inputFile >> highScore;
-        if(highScore < level){
-        outputFile << level;
+    int highScore = 0;
+    inputFile >> highScore;
 
-        }
 
+    if(highScore <= level){
+
+
+        outputFile << level;
     }
 }
 

@@ -207,6 +207,9 @@ int main()
 			}
 			else if (1 == sf::Keyboard::isKeyPressed(sf::Keyboard::Enter) & !CheckName.isSpecialChar())
 			{
+				if(userInput != ""){
+					fileaccess.nameHighScoreWrite(userInput,level);
+				}
 				game_over = 0;
 
 				level = 0;
@@ -214,9 +217,7 @@ int main()
 				player.reset();
 
 				enemy_manager.reset(level);
-				if(userInput != ""){
-					fileaccess.nameHighScoreWrite(userInput,level);
-				}
+				
 				userInput = "";
 				inputText.setString(userInput);
 
